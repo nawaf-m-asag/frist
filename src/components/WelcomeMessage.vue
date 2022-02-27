@@ -4,11 +4,11 @@
     <h2>This is frist vue app</h2>
   </div>
 </template>
-<script>
-export default {
-  name: "welcomeMessage",
-};
-</script>
+  <script>
+  export default {
+    name: "welcomeMessage",
+  };
+  </script>
 
 <style lang="scss" scoped>
 $fontSize: 50px;
