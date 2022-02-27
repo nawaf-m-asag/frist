@@ -1,17 +1,21 @@
 <template>
   <div class="about">
-    <h1>This is an about page 2</h1>
-    <welcomeMessage />
+    <h1>{{pageName}}</h1>
+    <p>{{pageDescription}}</p>
   </div>
 </template>
 
 <script>
 //@ => src  
-import welcomeMessage from "@/components/WelcomeMessage.vue";
+
 export default {
-  name: "about",
-  components: {
-    welcomeMessage,
-  },
-};
+ data:function () {
+   return{
+     pageName:"About us",
+     pageDescription:"This is  an about page"
+  
+   };
+ },
+  name:"about"
+}
 </script>
