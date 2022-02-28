@@ -1,20 +1,22 @@
 <template>
     <div class="header">
-        <div class="logo">App Logo</div>
-        <ul>
-            <router-link to="/" tag="li" exact>
-                <li><a>Home</a></li>
-            </router-link>
-            <router-link to="/blog" tag="li" exact>
-                <li><a>Blog</a></li>
-            </router-link>  
-            <router-link to="/about" tag="li">
-               <li><a>About</a></li>
-            </router-link> 
-            <router-link to="/help"  tag="li" replace>
-                <li><a>Help</a></li>
-            </router-link>
-        </ul>
+        <div class="container">
+            <div class="logo">App Logo</div>
+            <ul>
+                <router-link to="/" tag="li" exact>
+                    <li><a>Home</a></li>
+                </router-link>
+                <router-link to="/blog" tag="li" exact>
+                    <li><a>Blog</a></li>
+                </router-link>  
+                <router-link to="/about" tag="li">
+                <li><a>About</a></li>
+                </router-link> 
+                <router-link to="/help"  tag="li" replace>
+                    <li><a>Help</a></li>
+                </router-link>
+            </ul>
+        </div>
     </div>
 </template>
 <script>
