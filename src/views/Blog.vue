@@ -6,7 +6,13 @@
           <div class="row">
             <div class="col-md-8">
               <div class="post-area">
-                <BlogPosts />
+                <BlogPosts v-for="post in posts" v-bind:key="post.id" 
+                :views="post.views"  
+                :title="post.title"  
+                :content="post.content"  
+                :date="post.date"  
+                :auther="post.auther"  
+                :category="post.category"/>
               </div>
             </div>
             <div class="col-md-4">
@@ -21,18 +27,21 @@
 <script>
 import BlogPosts from '@/components/blog/BlogPosts';
 import BlogSidebar from '@/components/blog/BlogSidebar';
+import PostJson from '../json/BlogData.json';
 export default {
   
     data:function () {
    return{
      pageName:"Blog",
-     pageDescription:"This is  an blog page"
+     pageDescription:"This is  an blog page",
+     posts:PostJson
    };
  },
   name:"Help",
   components:{
     BlogPosts,
-    BlogSidebar
+    BlogSidebar,
+    
   }
 }
 </script>
