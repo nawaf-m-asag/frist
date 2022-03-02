@@ -11,7 +11,7 @@
                 <span class="post-auther">{{auther}}</span>
             </div>
             <div class="col-sm-6 text-right">
-                <span class="post-category">{{category}}</span>
+                <span class="post-category">{{uppercase}}</span>
             </div>
         </div>
     </div>
@@ -20,7 +20,13 @@
 <script>
 export default {
     props:["views","title","date","category","auther","content"],
-    name:"sidebar"
+    name:"sidebar",
+    computed: {
+        uppercase(){
+          return this.category.toUpperCase()
+        }
+      }
+  
 }
 </script>
 <style lang="scss" scoped>
