@@ -30,6 +30,11 @@ export default {
         color:#fff;
         overflow: hidden;
         height: 60px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        z-index: 1000;
         .logo{
             font-size: 24px;
             padding: 20px;
