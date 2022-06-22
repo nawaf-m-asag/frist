@@ -22,7 +22,8 @@ export default {
     props:["views","title","date","category","auther","content"],
     name:"sidebar",
     computed: {
-        uppercase(){
+
+        uppercase:function(){
           return this.category.toUpperCase()
         }
       }
